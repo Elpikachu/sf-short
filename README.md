@@ -1,13 +1,8 @@
-## Overview
+Symfony for Platform.sh
+=======================
 
-Demo using Symfony standalone
-
-- project is https://console.platform.sh/solutions/jvsfuw4347nrw
-- observablity suite integration is enabled for this project, you can run profiles on the symfony urls
-
-## Special remarks for demoing
-
-none
-
-## Contribution
-- Maintainer of this template: @jonas.kroeger
+<p align="center">
+<a href="https://console.platform.sh/projects/create-project?template=https://raw.githubusercontent.com/symfonycorp/platformsh-symfony-template-metadata/main/symfony-6.3-php8.2-webapp.template.yaml&utm_content=symfonycorp&utm_source=github&utm_medium=button&utm_campaign=deploy_on_platform">
+    <img src="https://platform.sh/images/deploy/lg-blue.svg" alt="Deploy on Platform.sh" width="180px" />
+</a>
+</p>
