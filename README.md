@@ -2,8 +2,8 @@
 
 Demo using Symfony standalone
 
-- project is https://console.platform.sh/solutions/jvsfuw4347nrw
-- observablity suite integration is enabled for this project, you can run profiles on the symfony urls
+- Platform.sh: https://console.platform.sh/solutions/jvsfuw4347nrw (observablity suite integration is enabled for this project, you can run profiles on the symfony urls)
+- Upsun:
 
 ## Special remarks for demoing
 
