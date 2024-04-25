@@ -2,18 +2,18 @@ routes:
     "https://{all}/": { type: upstream, upstream: "app:http" }
     "http://{all}/": { type: redirect, to: "https://{all}/" }
 
-services: 
+services:
     database:
         type: postgresql:15
 
-    
+
 
 applications:
     app:
         source:
             root: "/"
 
-        type: php:8.2
+        type: php:8.3
 
         dependencies:
             php:
@@ -29,7 +29,7 @@ applications:
                 - pdo_pgsql
                 - sodium
                 - xsl
-                
+
 
         variables:
             php:
@@ -46,17 +46,17 @@ applications:
 
         mounts:
             "/var": { source: storage, source_path: var }
-            
+
 
         relationships:
             database: "database:postgresql"
-            
+
         hooks:
             build: |
                 set -x -e
 
                 curl -fs https://get.symfony.com/cloud/configurator | bash
-                
+
                 NODE_VERSION=18 symfony-build
 
             deploy: |
